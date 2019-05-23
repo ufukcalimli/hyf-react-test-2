@@ -13,13 +13,13 @@ class App extends Component {
     currentUser: null,
   };
 
-  getUsers() {
+  getUsers = () => {
     fetch('https://uinames.com/api/?amount=5&ext')
       .then(res => res.json())
       .then(res => {
         this.setState({ data: res });
       });
-  }
+  };
 
   getCurrentUser = name => {
     const { data } = this.state;
@@ -37,8 +37,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          {/* <FetchButton getUsers={this.getUsers} /> this component did not work(I don't know why)*/}
-          <button onClick={() => this.getUsers()}>Get Users</button>
+          <FetchButton getUsers={this.getUsers} />{' '}
+          {/*this component did not work(I don't know why)*/}
+          {/* <button onClick={() => this.getUsers()}>Get Users</button> */}
         </header>
         <div className="content">
           <div className="right-side">
