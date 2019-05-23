@@ -1,0 +1,49 @@
+.App {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.App-header {
+  height: 50px;
+  padding: 15px;
+  color: white;
+  margin-bottom: 2%;
+  box-shadow: 1px 1px 5px black;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-side {
+  order: 1;
+  position: relative;
+  width: 300px;
+}
+
+.left-side li {
+  border-bottom: none;
+}
+
+.user-info {
+  border: 1px solid rgba(78, 78, 78, 0.9);
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 3%;
+}
+
+.tag,
+.name {
+  font-weight: bold;
+  margin-right: 1%;
+}
